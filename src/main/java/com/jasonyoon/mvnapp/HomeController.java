@@ -14,6 +14,8 @@ public class HomeController {
     @RequestMapping(value = "/")
     public ModelAndView welcome() {
         ModelAndView mav = new ModelAndView("index");
+        mav.addObject("exampleText", "this is an object that is mapped to view via Thymeleaf");
+
         return mav;
     }
 }
