@@ -1,6 +1,9 @@
-package com.jasonyoon.mvnapp;
+package com.jasonyoon.mvnapp.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -11,8 +14,12 @@ import org.springframework.web.servlet.ModelAndView;
 @RestController
 public class HomeController {
 
-    @RequestMapping(value = "/")
+    private static final Logger LOG = LoggerFactory.getLogger(HomeController.class);
+
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public ModelAndView welcome() {
+        LOG.info("Entering / endpoint to welcome");
+
         ModelAndView mav = new ModelAndView("index");
         mav.addObject("exampleText", "this is an object that is mapped to view via Thymeleaf");
 
