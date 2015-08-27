@@ -23,7 +23,10 @@ public class JsonController {
     public ModelMap jsonController() {
         LOG.info("Entering /json endpoint to see an example of returning a JSON object");
 
-        Person person = new Person("Jason", "male", 21);
+        Person person = new Person();
+        person.setName("Jason");
+        person.setGender("male");
+        person.setAge(21);
 
         ModelMap modelMap = new ModelMap();
         modelMap.addAttribute("person", person);
