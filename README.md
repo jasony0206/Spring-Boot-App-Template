@@ -1,4 +1,4 @@
-# spring-boot-app
+# Spring Boot Application Template
 This is a tutorial-like template of a Spring Boot Java web application. Various endpoints are available, with each utilizing a distinct feature that Spring Boot provides out of the box. In addition, Thymeleaf template engine is integrated to help visualize endpoints while maintaining the MVC architecture. 
 
 ### To run unit tests:
