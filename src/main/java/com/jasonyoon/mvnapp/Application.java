@@ -1,5 +1,6 @@
 package com.jasonyoon.mvnapp;
 
+import com.jasonyoon.mvnapp.client.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -28,6 +29,7 @@ public class Application {
 
         String[] beanNames = ctx.getBeanDefinitionNames();
         Arrays.sort(beanNames);
+
         for (String beanName : beanNames) {
             System.out.println(beanName);
         }
