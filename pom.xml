@@ -43,6 +43,13 @@
             <artifactId>cucumber-junit</artifactId>
             <version>1.2.4</version>
         </dependency>
+
+        <!--jackson-->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.10</version>
+        </dependency>
     </dependencies>
 
     <properties>
